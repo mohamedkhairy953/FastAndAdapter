@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 import com.mikepenz.fastadapter.FastAdapter;
 import com.mikepenz.fastadapter.items.AbstractItem;
+import com.mikepenz.materialize.holder.StringHolder;
 
 import java.util.List;
 
@@ -60,12 +61,12 @@ public class Header extends AbstractItem<Header, Header.ViewHolder> {
 
         @Override
         public void bindView(Header item, List<Object> payloads) {
-
+           textView.setText(item.title);
         }
 
         @Override
         public void unbindView(Header item) {
-
+textView.setText(null);
         }
 
     }

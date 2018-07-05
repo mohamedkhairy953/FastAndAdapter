@@ -61,7 +61,6 @@ public class MainActivity extends AppCompatActivity  {
             headers.add(new Header(""+i));
         }
         itemAdapter.add(headers);
-        fastAdapter.setHasStableIds(true);
         fastAdapter.withSelectable(true);
         fastAdapter.withOnClickListener(new OnClickListener<Header>() {
             @Override
